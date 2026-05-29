@@ -1,0 +1,32 @@
+{% extends "app/base.html" %}
+
+{% block title %}PTech Django Starter{% endblock %}
+
+{% block content %}
+  <p class="kicker">Starter Django</p>
+  <h1>PTech Django Starter</h1>
+  <p class="lead">
+    A ready-to-use Django foundation with MySQL, REST API, Jazzmin and Celery already wired in.
+    It starts fast in development and is ready to grow into a real project.
+  </p>
+
+  <div class="actions">
+    <a class="pill" href="/admin/"><span class="dot"></span>Open admin</a>
+    <a class="pill" href="/api/health/"><span class="dot"></span>Check API health</a>
+  </div>
+
+  <section class="grid">
+    <article class="panel">
+      <strong>Django</strong>
+      <p>Modern settings, a clean project package and a simple path to production.</p>
+    </article>
+    <article class="panel">
+      <strong>REST API</strong>
+      <p>DRF is active and exposes a health endpoint you can expand into real APIs.</p>
+    </article>
+    <article class="panel">
+      <strong>Celery</strong>
+      <p>Celery is ready for background jobs once you plug in a broker like Redis.</p>
+    </article>
+  </section>
+{% endblock %}
